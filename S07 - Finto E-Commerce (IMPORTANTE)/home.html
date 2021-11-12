@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg" sizes="32x32">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>GeekStore&trade; | Il tuo mondo nerd!</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md bg-orange navbar-dark shadow-lg">
+            <div class="container">
+                <a class="navbar-brand displayTel" onclick="sel_home();" href="javascript:void(0)">
+                    <img src="assets/img/geekstore_logo.svg" width="200px" alt="Geek Store" id="logo"> Benvenuti su
+                    GeekStore&trade;
+                </a>
+
+                <a class="navbar-brand displayPC" onclick="sel_home();" href="javascript:void(0)">
+                    <img src="assets/img/geekstore_logo.svg" width="320px" alt="Geek Store" id="logo"> Benvenuti su
+                    GeekStore&trade;
+                </a>
+
+                <!-- Inizio burger menu -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"
+                    aria-controls="myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Fine burger menu -->
+
+                <div class="collapse navbar-collapse justify-content-end" id="myNav">
+                    <ul class="navbar-nav ms-auto text-left">
+                        <li class="nav-item active btn-menu">
+                            <a class="nav-link" onclick="sel_home();" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item dropdown btn-menu">
+                            <a class="nav-link dropdown-toggle" href="categorie.html" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" onclick="catH();" href="javascript:void(0)">Tutte le
+                                    categorie</a>
+                                <hr>
+                                <a class="dropdown-item" onclick="catA();" href="javascript:void(0)">Funko Pop</a>
+                                <a class="dropdown-item" onclick="catB();" href="javascript:void(0)">Giochi da
+                                    tavolo</a>
+                                <a class="dropdown-item" onclick="catC();" href="javascript:void(0)">Videogames</a>
+                            </div>
+                        </li>
+                        <li class="nav-item btn-menu">
+                            <a class="nav-link" onclick="carrello();" href="home.html">Carrello</a>
+                        </li>
+                        <li class="nav-item btn-menu">
+                            <a class="nav-link" onclick="contatti()" href="#">Contatti</a>
+                        </li>
+                        <li class="nav-item btn-menu">
+                            <a class="nav-link" onclick="chiudisessione()" href="index.html">Chiudi sessione</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sfondoheader">
+        <div id="benvenuto2"></div>
+        <div id="benvenuto"></div>
+
+        <div id="mainCategoria1"></div>
+        <div id="mainCategoria2"></div>
+        <div id="mainCategoria3"></div>
+
+        <div id="carrello"></div>
+
+        <div id="contatti"></div>
+    </main>
+
+    <footer>
+        <div class="d-flex justify-content-around bg-blue p-3 shadow-lg">
+            <div class="container text-center text-white m-4">
+                <small>Copyright &copy; GeekStore&trade; Tutti i diritti riservati. GeekStore è un marchio creato da
+                    Cristian A. Liguori in collaborazione con Epicode School.</small>
+                <img src="assets/img/geekstore_logo.svg" width="180px" alt="Geek Store">
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/home.js"></script>
+
+</body>
+
+</html>

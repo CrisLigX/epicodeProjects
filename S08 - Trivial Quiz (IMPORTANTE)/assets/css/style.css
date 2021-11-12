@@ -1,0 +1,93 @@
+.bg-orange {
+    background-color: #0C5860;
+    border-bottom: 2pt solid white;
+}
+
+.bg-blue {
+    background-color: #BB0064;
+    border-top: 2pt solid white;
+}
+
+.mbottom {
+    margin-bottom: 10rem;
+}
+
+.spaziovuoto {
+    height: 5rem;
+}
+
+.sfondoheader, .maincontenitore {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sfondoheader, .maincontenitore  {
+    background-image: url("../img/wallpaper1.jpg");
+    padding-top: 10rem;
+}
+
+.btn-menu {
+    background-color: #BB0064;
+    border-bottom: 2pt solid white;
+    padding: 0.1rem;
+    color: white;
+}
+
+.displayPC {
+    display: none;
+}
+
+.ombratesto {
+    text-shadow: 1pt 1pt black;
+}
+
+#spazio {
+    height: 10rem;
+}
+
+.margiauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo1 {
+    display: none;
+}
+
+.imgSize {
+    width: 350px;
+}
+
+@media screen and (min-width: 768px){
+
+    #logo1 {
+        display: none;
+    }
+
+    .imgSize {
+        width: 560px;
+    }
+  
+  }
+
+
+@media screen and (min-width: 1200px){
+    .displayPC {
+      display: inline-block;
+    }
+
+    .displayTel {
+        display: none;
+    }
+
+    #logo1 {
+        display: inline-block;
+    }
+
+    .imgSize {
+        width: 850px;
+    }
+  
+  }

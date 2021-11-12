@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 200px;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+    min-height: 1.2em;
+    display: inline-block;
+    pointer-events: none;
+    vertical-align: bottom;
+    fill: currentColor;
+}
+
+.code_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #1d1e22;
+    min-height: 300px;
+    border-left: 0.1pt solid #2c2c2c;
+    border-right: 0.1pt solid #2c2c2c;
+    resize: horizontal;
+    overflow: hidden;
+    width: 32%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    background-color: black;
+    border-style: none;
+    color: white;
+    width: 5.5rem;
+}
+
+.file-type-icon {
+    width: 17px;
+    height: 17px;
+    margin-inline-end: .4rem;
+}
+
+.box-title {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    color: #AAAEBC;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.header_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+
+.left_header {
+    background-color: #1d1e22;
+    border-top: 2pt solid #34363E;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 6;
+    padding-right: 0.5rem;
+}
+
+.mini-button {
+    height: 1.8rem;
+    font-size: .8rem;
+    margin: 0 3px 0 0;
+    border-width: 1px;
+    border-radius: 2px;
+    fill: white;
+    background: #5A5F73;
+    border: none;
+}
+
+.mini-button:hover {
+    background: #515151;
+}
+
+textarea {
+    overflow: hidden;
+    line-height: 20px;
+    background-color: #1d1e22;
+    border: none;
+    color: white;
+    margin: 1rem;
+    min-width: 95%;
+    min-height: 300px;
+    resize: none;
+  }
+
+textarea:focus, input:focus {
+    outline: none !important;
+}
+
+#carte {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    resize: vertical;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.duebottoni{
+    display: flex;
+    flex-direction: row;
+}
+
+#parteFooter {
+    background-color: black;
+    height: 20px;
+    border-top: 0.1pt solid #2c2c2c;}
+
+#previewDisplay {
+    min-height: 200px;
+}
+
+.bloccoBlack {
+    min-width: 20px;
+    max-width: 20px;
+}
+
+#nostraNav {
+    height: 85px;
+    color: white;
+    background-color: black;
+    border-bottom: 0.1pt solid #272727;
+
+}
+
+.matitone {
+    margin-left: 6px;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    fill: currentColor;
+    flex: 0 0 auto;
+}
+
+.matitone:hover {
+    cursor: pointer;
+    color: grey;
+    transform: rotate(-6deg);
+    transition: transform .10s linear;
+}
+
+.buttonType {
+    color: white;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    background-color: #444857;
+    padding: 0.5rem;
+    border-radius: 8%;
+}
+
+.buttonType span {
+    margin-right: 5pt;
+}
+
+#previewDisplay {
+    height: 200px;
+}
+
+/* Footer */
+
+.footerDark {
+    background-color: black;
+}
+
+button {
+    background: #444857;
+    border-style: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    border-width: 1px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5A5F73;
+}
+
+#bloccoMobile {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    
+#carte {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.code_box {
+    width: auto;
+}
+
+#css_box, #js_box {
+    display: none;
+}
+
+.header_box {
+    display: none;
+}
+
+fieldset {
+    background-color: black;
+}
+
+.buttonMB {
+    border-radius: 0;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-right: -0.2rem;
+}
+
+.buttonMB_NA {
+    background-color: #2C303A;
+}
+
+#bloccoMobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nostraNav {
+    height: 100%;
+}
+
+
+
+
+}

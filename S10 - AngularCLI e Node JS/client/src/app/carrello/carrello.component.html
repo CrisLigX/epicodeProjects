@@ -1,0 +1,20 @@
+<h1 class="text-center text-primary mt-5">Carrello</h1>
+
+<div class="container d-flex flex-row-wrap p-2">
+
+    <div class="container my-10" *ngFor="let item of selProd, index as i">
+        <div class="card shadow" style="width: 18rem;">
+            <img src="https://picsum.photos/500/300?random=1" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">{{item.descrizione}}</p>
+                <p class="card-text">{{item.prezzo | currency:'EUR' }}</p>
+                <p class="card-text">Quantità disponibili {{item.qta | number }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container d-flex justify-content-center mb-4">
+<button type="button" class="btn btn-warning" (click)="svuotaCarrello()">Svuota carrello</button>
+</div>

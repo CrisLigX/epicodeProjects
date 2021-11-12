@@ -1,0 +1,20 @@
+[
+    {   
+        "audio": "Formula 1",
+        "path": "assets/audio/formula1.mp3",
+        "identificativo": "1"
+    },
+
+    {
+        "audio": "Sottofondo di stadio",
+        "path": "assets/audio/stadium.mp3",
+        "identificativo": "2"
+    },
+
+    {
+        "audio": "Ticket to ride",
+        "path": "assets/audio/ticket.mp3",
+        "identificativo": "3"
+    }
+]
+

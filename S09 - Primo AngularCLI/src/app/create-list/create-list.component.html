@@ -1,0 +1,16 @@
+<div class="row g-3">
+  
+    <div id="TotalInput" class="mt-5">
+
+      <h2 class="text-center text-primary mb-5">Inserisci un nuovo nominativo nella rubrica</h2>
+
+      <input [(ngModel)] = "nome" type="text" name="nome" class="form-control mb-2" id="input1" placeholder="Inserisci nome">
+      <input [(ngModel)] = "cognome" type="text" name="cognome" class="form-control mb-2" id="input2" placeholder="Inserisci cognome">
+      <input [(ngModel)] = "citta" type="text" name="citta" class="form-control" id="input3" placeholder="Inserisci città">
+    </div>
+
+    <div class="col-sm">
+      <button type="button" class="btn btn-primary form-control" (click)="createList()">Inserisci elemento</button>
+    </div>
+  
+  </div>

@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-expand-md bg-orange navbar-dark shadow-lg">
+    <div class="container">
+        <a class="navbar-brand displayTel" onclick="sel_home();" href="javascript:void(0)">
+            <img src="assets/img/trivialcode_logo.svg" width="200px" alt="Geek Store">
+            <br>
+        </a>
+
+        <a class="navbar-brand displayPC" onclick="sel_home();" href="javascript:void(0)">
+            <img src="assets/img/trivialcode_logo.svg" width="240px" alt="Geek Store">
+            <br>
+        </a>
+
+        <p class="text-white" id="logo1"></p>
+        <!-- Inizio burger menu -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Fine burger menu -->
+
+        <div class="collapse navbar-collapse justify-content-end" id="myNav">
+            <ul class="navbar-nav ms-auto text-left">
+                <li class="nav-item active btn-menu">
+                    <a class="nav-link" onclick="selHome();" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item dropdown btn-menu">
+                    <a class="nav-link dropdown-toggle" href="categorie.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quiz</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="quizA();" href="javascript:void(0)">Q1 | Computer</a>
+                        <a class="dropdown-item" onclick="quizB();" href="javascript:void(0)">Q2 | Internet</a>
+                        <a class="dropdown-item" onclick="quizC();" href="javascript:void(0)">Q3 | Programmazione</a>
+                    </div>
+                </li>
+                <li class="nav-item btn-menu">
+                    <a class="nav-link" href="#!contatti">Contatti</a>
+                </li>
+                <li class="nav-item btn-menu">
+                    <a id="loginPro" class="nav-link" onclick="proceduraAccesso()" href="javascript:void(0)"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="assets/js/header.js"></script>

@@ -1,0 +1,49 @@
+[
+    {
+        "nome": "PlayStation | The Last of US 2",
+        "categoria": "Videogames",
+        "identificativo": "vdg1",
+        "prezzo": 59.90,
+        "immagine": "../Settimana07/assets/img/vdg_01.png"
+    },
+
+    {
+        "nome": "PC | Days Gone",
+        "categoria": "Videogames",
+        "identificativo": "vdg2",
+        "prezzo": 39.90,
+        "immagine": "../Settimana07/assets/img/vdg_02.png"
+    },
+
+    {
+        "nome": "PC | Rainbow Six Siege",
+        "categoria": "Videogames",
+        "identificativo": "vdg3",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/vdg_03.png"
+    },
+
+    {
+        "nome": "PC | Red Dead Redemption 2",
+        "categoria": "Videogames",
+        "identificativo": "vdg4",
+        "prezzo": 29.90,
+        "immagine": "../Settimana07/assets/img/vdg_04.png"
+    },
+
+    {
+        "nome": "PC | Death Stranding",
+        "categoria": "Videogames",
+        "identificativo": "vdg5",
+        "prezzo": 29.90,
+        "immagine": "../Settimana07/assets/img/vdg_05.png"
+    },
+
+    {
+        "nome": "Nintendo | Animal Crossing",
+        "categoria": "Videogames",
+        "identificativo": "vdg6",
+        "prezzo": 59.90,
+        "immagine": "../Settimana07/assets/img/vdg_06.png"
+    }
+]

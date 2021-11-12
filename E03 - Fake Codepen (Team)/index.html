@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codepen by Team3</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Icone Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/codepen-favicon.png" sizes="32x32">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <!-- Qui inizia la navbar -->
+
+        <nav id="nostraNav" class="navbar navbar-expand-md py-3">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html"><img src="assets/img/codepen-icon.png" width="35px"></a>
+
+                <div class="d-flex">
+                    <div>
+                        <input type="text" style="font-size: 1.5rem;"></input>
+                        <svg class="matitone" viewBox="0 0 100 100">
+                            <path d="M24.56 92.536L0 100l7.453-24.583c6.356-.244 17.322 10.792 17.107 17.119zM96.617 32.082l-.475.471L67.383 3.766l.472-.472c12.927-12.94 42.016 15.517 28.762 28.788zM61.64 9.516l28.758 28.785-46.303 46.345c-1.222 1.221-2.234.884-2.234.884l2.314-15.356-14.454.074.072-14.468-15.342 2.312s-.34-1.011.883-2.234L61.64 9.516z">
+                            </path>
+                        </svg>
+                        <p style="color: grey;">A cura del Team 3</p>
+                    </div>
+                </div>
+
+
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#myNav"
+                    aria-controls="myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="myNav">
+                    <ul class="navbar-nav ms-auto text-left">
+                        <li class="nav-item ml-1">
+                            <button class="buttonType" href="javascript:void(0)">
+                                <a class="p-2 fa fa-heart" style="color: white;"></a>
+                            </button>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <button class="buttonType" href="javascript:void(0)">
+                                <a class="p-2 fa fa-cloud" style="color: white;"></a>
+                                <span>Save</span>
+                            </button>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <button class="buttonType" href="javascript:void(0)">
+                                <a class="p-2 fa fa-cog" style="color: white;"></a>
+                                <span>Settings</span>
+                            </button>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <button class="buttonType" href="javascript:void(0)">
+                                <div class="p-1">
+                                    <svg viewBox="0 0 20 20" class="EditorHeaderViewSwitcher_iconPen-1Mc1B"><path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 016 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 010 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0113 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 017 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0120 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0114 5.997V1.003z"></path></svg>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <button class="buttonType" href="javascript:void(0)">
+                                <div class="p-1">
+                                    <svg viewBox="0 0 69 94">
+                                        <path
+                                            d="M52.574 70.837c2.547-7.953 1.484-16.383-2.442-23.31l10.066-21.632 4.344 2.02L69 18.34 29.581 0l-4.457 9.578 4.344 2.02L19.402 33.23C11.578 34.695 4.445 39.309 0 46.383l23.504 10.934L9.387 87.653c-1.188 2.546-.898 5.21.629 5.921 1.531.715 3.754-.789 4.937-3.331l14.113-30.336 23.508 10.93z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </li>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Qui finisce -->
+
+    </header>
+
+
+
+    <section id="main">
+        <!-- corpo principale -->
+
+        <div id="carte">
+
+            <div class="bloccoBlack"></div>
+
+            <div id="html_box" class="code_box">
+
+                <div class="header_box">
+
+                    <div class="left_header">
+                        <h2>
+                            <svg viewBox="0 0 15 15" class="file-type-icon" id="icon-file-html">
+                                <rect fill="#FF3C41" width="15" height="15" rx="4"></rect>
+                                <path
+                                    d="M10.97 2.29a.563.563 0 0 0-.495-.29.572.572 0 0 0-.488.277l-5.905 9.86a.565.565 0 0 0-.007.574c.102.18.287.289.495.289a.572.572 0 0 0 .488-.277l5.905-9.86a.565.565 0 0 0 .007-.574"
+                                    fill="#28282B"></path>
+                            </svg>
+                            <span class="box-title">HTML</span>
+                        </h2>
+                    </div>
+
+                    <div class="right_header">
+
+                        <div class="duebottoni">
+                            <button class="mini-button">
+                                <svg viewBox="0 0 100 100" id="icon-gear" width="10" height="10" fill="white">
+                                    <path
+                                        d="M87.687,45.077c-0.313-2.433-0.816-4.807-1.542-7.079l8.145-11.73l-5.827-7.515l-0.094-0.123l-5.824-7.514
+                                                l-12.955,5.577c-2.041-1.265-4.192-2.362-6.459-3.219L59.42,0h-9.34h-0.153h-9.341l-3.709,13.474
+                                                c-2.27,0.857-4.421,1.955-6.463,3.222l-12.957-5.577l-5.825,7.514l-0.097,0.124l-5.822,7.517l8.146,11.731
+                                                c-0.726,2.271-1.233,4.645-1.544,7.079L0,52.032l2.08,9.375l0.033,0.15l2.08,9.375l14.001,0.761c1.295,2.028,2.771,3.926,4.4,5.668
+                                                l-2.396,14.227l8.416,4.173l0.138,0.067L37.169,100l9.309-10.796c1.161,0.109,2.335,0.173,3.524,0.173s2.358-0.074,3.52-0.184
+                                                l9.317,10.804l8.415-4.173l0.141-0.066l8.413-4.172l-2.396-14.228c1.628-1.741,3.104-3.64,4.4-5.672l14-0.759l2.078-9.375
+                                                l0.035-0.154L100,52.025L87.687,45.077z M50.003,34.51c8.435,0,15.272,7.035,15.272,15.719c0,8.679-6.839,15.717-15.272,15.717
+                                                c-8.436,0-15.272-7.038-15.272-15.717C34.731,41.545,41.569,34.51,50.003,34.51z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <div class="dropdown">
+                                <button class="mini-button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini" width="10"
+                                        height="10">
+                                        <path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+                                    c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+                                    C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Format HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Analyze HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Maximize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Minimize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Fold All</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Unfold All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <fieldset id="bloccoMobile">
+
+                    <div>
+                        <button type="button" class="buttonMB">HTML</button>
+                        <button type="button" class="buttonMB buttonMB_NA">CSS</button>
+                        <button type="button" class="buttonMB buttonMB_NA">JS</button>
+                        <button type="button" class="buttonMB">Result</button>
+                    </div>
+
+                    <div>
+                        <div class="duebottoni">
+                            <button class="mini-button">
+                                <svg viewBox="0 0 100 100" id="icon-gear" width="10" height="10" fill="white">
+                                    <path
+                                        d="M87.687,45.077c-0.313-2.433-0.816-4.807-1.542-7.079l8.145-11.73l-5.827-7.515l-0.094-0.123l-5.824-7.514
+                                            l-12.955,5.577c-2.041-1.265-4.192-2.362-6.459-3.219L59.42,0h-9.34h-0.153h-9.341l-3.709,13.474
+                                            c-2.27,0.857-4.421,1.955-6.463,3.222l-12.957-5.577l-5.825,7.514l-0.097,0.124l-5.822,7.517l8.146,11.731
+                                            c-0.726,2.271-1.233,4.645-1.544,7.079L0,52.032l2.08,9.375l0.033,0.15l2.08,9.375l14.001,0.761c1.295,2.028,2.771,3.926,4.4,5.668
+                                            l-2.396,14.227l8.416,4.173l0.138,0.067L37.169,100l9.309-10.796c1.161,0.109,2.335,0.173,3.524,0.173s2.358-0.074,3.52-0.184
+                                            l9.317,10.804l8.415-4.173l0.141-0.066l8.413-4.172l-2.396-14.228c1.628-1.741,3.104-3.64,4.4-5.672l14-0.759l2.078-9.375
+                                            l0.035-0.154L100,52.025L87.687,45.077z M50.003,34.51c8.435,0,15.272,7.035,15.272,15.719c0,8.679-6.839,15.717-15.272,15.717
+                                            c-8.436,0-15.272-7.038-15.272-15.717C34.731,41.545,41.569,34.51,50.003,34.51z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <button class="mini-button">
+                                <svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini" width="10"
+                                    height="10">
+                                    <path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+                                c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+                                C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <textarea></textarea>
+                </div>
+
+            </div>
+
+            <div class="bloccoBlack"></div>
+
+            <div id="css_box" class="code_box">
+                <!--Testata Box-->
+                <div class="header_box">
+
+                    <div class="left_header">
+                        <h2>
+                            <svg viewBox="0 0 15 15" class="file-type-icon" id="icon-file-css">
+                                <rect fill="#0EBEFF" width="15" height="15" rx="4"></rect>
+                                <path
+                                    d="M8 8.366l1.845 1.065a.507.507 0 0 0 .686-.181.507.507 0 0 0-.186-.685L8.5 7.5l1.845-1.065a.507.507 0 0 0 .186-.685.507.507 0 0 0-.686-.181L8 6.634v-2.13A.507.507 0 0 0 7.5 4c-.268 0-.5.225-.5.503v2.131L5.155 5.569a.507.507 0 0 0-.686.181.507.507 0 0 0 .186.685L6.5 7.5 4.655 8.565a.507.507 0 0 0-.186.685c.134.232.445.32.686.181L7 8.366v2.13c0 .271.224.504.5.504.268 0 .5-.225.5-.503V8.366z"
+                                    fill="#282828"></path>
+                            </svg>
+                            <span class="box-title">CSS</span>
+                        </h2>
+                    </div>
+
+                    <div class="right_header">
+
+                        <div class="duebottoni">
+                            <button class="mini-button">
+                                <svg viewBox="0 0 100 100" id="icon-gear" width="10" height="10" fill="white">
+                                    <path
+                                        d="M87.687,45.077c-0.313-2.433-0.816-4.807-1.542-7.079l8.145-11.73l-5.827-7.515l-0.094-0.123l-5.824-7.514
+                                                l-12.955,5.577c-2.041-1.265-4.192-2.362-6.459-3.219L59.42,0h-9.34h-0.153h-9.341l-3.709,13.474
+                                                c-2.27,0.857-4.421,1.955-6.463,3.222l-12.957-5.577l-5.825,7.514l-0.097,0.124l-5.822,7.517l8.146,11.731
+                                                c-0.726,2.271-1.233,4.645-1.544,7.079L0,52.032l2.08,9.375l0.033,0.15l2.08,9.375l14.001,0.761c1.295,2.028,2.771,3.926,4.4,5.668
+                                                l-2.396,14.227l8.416,4.173l0.138,0.067L37.169,100l9.309-10.796c1.161,0.109,2.335,0.173,3.524,0.173s2.358-0.074,3.52-0.184
+                                                l9.317,10.804l8.415-4.173l0.141-0.066l8.413-4.172l-2.396-14.228c1.628-1.741,3.104-3.64,4.4-5.672l14-0.759l2.078-9.375
+                                                l0.035-0.154L100,52.025L87.687,45.077z M50.003,34.51c8.435,0,15.272,7.035,15.272,15.719c0,8.679-6.839,15.717-15.272,15.717
+                                                c-8.436,0-15.272-7.038-15.272-15.717C34.731,41.545,41.569,34.51,50.003,34.51z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <div class="dropdown">
+                                <button class="mini-button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini" width="10"
+                                        height="10">
+                                        <path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+                                    c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+                                    C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Format HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Analyze HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Maximize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Minimize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Fold All</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Unfold All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <div class="bloccoBlack"></div>
+
+            <div id="js_box" class="code_box">
+                <!--Testata Box-->
+                <div class="header_box">
+
+                    <div class="left_header">
+                        <h2>
+                            <svg viewBox="0 0 15 15" class="file-type-icon" id="icon-file-js">
+                                <rect fill="#FCD000" width="15" height="15" rx="4"></rect>
+                                <path
+                                    d="M6.554 3.705c0 .267-.19.496-.452.543-1.2.217-2.12 1.61-2.12 3.275 0 1.665.92 3.057 2.12 3.274a.554.554 0 0 1-.205 1.087c-1.733-.322-3.022-2.175-3.022-4.361 0-2.187 1.289-4.04 3.022-4.362a.554.554 0 0 1 .657.544zm1.892 0c0-.347.316-.607.657-.544 1.733.322 3.022 2.175 3.022 4.362 0 2.186-1.289 4.04-3.022 4.361a.554.554 0 0 1-.205-1.087c1.2-.217 2.12-1.61 2.12-3.274 0-1.665-.92-3.058-2.12-3.275a.551.551 0 0 1-.452-.543z"
+                                    fill="#282828"></path>
+                            </svg>
+                            <span class="box-title">JS</span>
+                        </h2>
+                    </div>
+
+                    <div class="right_header">
+
+                        <div class="duebottoni">
+                            <button class="mini-button">
+                                <svg viewBox="0 0 100 100" id="icon-gear" width="10" height="10" fill="white">
+                                    <path
+                                        d="M87.687,45.077c-0.313-2.433-0.816-4.807-1.542-7.079l8.145-11.73l-5.827-7.515l-0.094-0.123l-5.824-7.514
+                                                l-12.955,5.577c-2.041-1.265-4.192-2.362-6.459-3.219L59.42,0h-9.34h-0.153h-9.341l-3.709,13.474
+                                                c-2.27,0.857-4.421,1.955-6.463,3.222l-12.957-5.577l-5.825,7.514l-0.097,0.124l-5.822,7.517l8.146,11.731
+                                                c-0.726,2.271-1.233,4.645-1.544,7.079L0,52.032l2.08,9.375l0.033,0.15l2.08,9.375l14.001,0.761c1.295,2.028,2.771,3.926,4.4,5.668
+                                                l-2.396,14.227l8.416,4.173l0.138,0.067L37.169,100l9.309-10.796c1.161,0.109,2.335,0.173,3.524,0.173s2.358-0.074,3.52-0.184
+                                                l9.317,10.804l8.415-4.173l0.141-0.066l8.413-4.172l-2.396-14.228c1.628-1.741,3.104-3.64,4.4-5.672l14-0.759l2.078-9.375
+                                                l0.035-0.154L100,52.025L87.687,45.077z M50.003,34.51c8.435,0,15.272,7.035,15.272,15.719c0,8.679-6.839,15.717-15.272,15.717
+                                                c-8.436,0-15.272-7.038-15.272-15.717C34.731,41.545,41.569,34.51,50.003,34.51z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <div class="dropdown">
+                                <button class="mini-button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <svg viewBox="-122.9 121.1 105.9 61.9" class="icon-arrow-down-mini" width="10"
+                                        height="10">
+                                        <path d="M-63.2,180.3l43.5-43.5c1.7-1.7,2.7-4,2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.7l-37.2,37.2l-37.2-37.2
+                                    c-1.7-1.7-4-2.7-6.5-2.7s-4.8,1-6.5,2.6c-1.9,1.8-2.8,4.2-2.8,6.6c0,2.3,0.9,4.6,2.6,6.5l0,0c11.4,11.5,41,41.2,43,43.3l0.2,0.2
+                                    C-73.5,183.9-66.8,183.9-63.2,180.3z"></path>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Format HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Analyze HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Maximize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Minimize HTML Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Fold All</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Unfold All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <div class="bloccoBlack"></div>
+
+        </div>
+
+        <div id="parteFooter"></div>
+
+    </section>
+
+    <section id="previewDisplay">
+
+    </section>
+
+    <footer>
+        <div class="navbar fixed-bottom navbar-dark footerDark">
+            <div class="footer-left">
+                <button id="console">Console</button>
+                <button id="console">Assets</button>
+                <button id="console">Shortcuts</button>
+            </div>
+            <div class="footer-right"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

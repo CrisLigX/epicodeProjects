@@ -1,0 +1,25 @@
+[
+    {
+        "video": "Dubrovnik",
+        "path": "assets/video/dubrovnik.mp4",
+        "identificativo": "1"
+    },
+
+    {
+        "video": "Fiori",
+        "path": "assets/video/flowers.mp4",
+        "identificativo": "2"
+    },
+
+    {
+        "video": "Persone",
+        "path": "assets/video/people.mp4",
+        "identificativo": "3"
+    },
+
+    {
+        "video": "Gatto",
+        "path": "assets/video/gatto.mp4",
+        "identificativo": "4"
+    }
+]

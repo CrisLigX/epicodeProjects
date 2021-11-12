@@ -1,0 +1,131 @@
+header, body {
+    font-family: Fira Sans, Helvetica, Arial, sans-serif;
+}
+
+nav {
+    box-shadow: 0 1px 15px 0 white;
+}
+
+h1, h2, h3 {
+    color: #0C0633;
+}
+
+#registrati_button, .btn {
+    color: white;
+    background: linear-gradient(to right, #6ABCDE , #527BB0);
+    border-radius: 2px;
+    border-style: none;
+}
+
+#sfondo_header {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background-image: url("../img/background_01.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sfondo_header h1, #sfondo_header p {
+    text-shadow: 1px 1px 1px black;
+}
+
+#sfondo_header h1, #box_blue h2 {
+    color: white;
+}
+
+#chisiamo {
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
+
+#chisiamo h1 {
+    text-align: center;
+}
+
+/* I tre box fluo */
+
+#box-fluo-b {
+    background-color: #98F8F8;
+}
+
+#box-fluo-r {
+    background-color: #FF3848;
+}
+
+#box-fluo-y {
+    background-color: #F3E562;
+}
+
+.box-fluo {
+    transform: skewX(-10deg);
+    transition: transform .10s linear;
+    padding: 2rem;
+}
+
+.box-fluo:hover {
+    transform: skewX(0deg);
+}
+
+.small-xl {
+    font-size: 3rem;
+}
+
+#box_blue {
+    font-size: 10pt;
+    background-color: #0C0633;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    left: 0;
+    color: white;
+    text-align: center;
+  }
+
+.fa-facebook, .fa-twitter, .fa-linkedin {
+    color: black;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1pt solid grey;
+    border-radius: 100%;
+}
+
+.fa-facebook {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.fa-users, .fa-comment, .fa-location-arrow {
+    color: red;
+    transform: scale(2);
+    padding: 1rem;
+}
+
+.fa-check {
+    color: red;
+    padding: 0.2rem;
+    border: 1pt solid whitesmoke;
+    border-radius: 100%;
+}
+
+
+/* Pagina contatti */
+
+#contatti {
+    margin-top: 100px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #sfondo_header {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        background-position: top;
+    }
+
+    #info_3 h2 {
+        font-size: 1.5rem;
+    }
+}

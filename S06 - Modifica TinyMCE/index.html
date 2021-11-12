@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor di testo dinamico</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
+
+  <!-- TinyMCE -->
+  <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+
+  <!-- JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type=text/css href="assets/CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+      <a class="navbar-brand">Editor di testo</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="container-fluid d-flex">
+
+      <div class="container mt-3 border p-3">
+        <form id="myForm" method="post">
+          <input id="txtTitolo" name="titolo" placeholder="Inserisci titolo" class="mb-3">
+          <textarea class="tinymce" id="txtTesto"></textarea>
+          <hr>
+        </form>
+
+        <button onclick="salvataggio()" class="btn btn-success">Salva</button>
+        <button onclick="nuovoElemento()" class="btn btn-primary">Nuovo</button>
+        <button onclick="ripristina()" class="btn btn-warning">Ripristina</button>
+
+        <div id="data-container"></div>
+
+      </div>
+
+      <div id="apt" class="container mt-3 text-center border">
+        <h3 id="ElemSave">Elementi salvati</h3>
+        <ul id="ElemSaveLista"></ul>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+
+</html>

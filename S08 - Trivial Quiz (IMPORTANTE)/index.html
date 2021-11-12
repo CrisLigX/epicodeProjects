@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial Code | Il quiz sul mondo informatico!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg" sizes="32x32">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body data-ng-app="trivialCode">
+
+
+    <header>
+        <div data-ng-include="'header.html'"></div>
+    </header>
+
+
+    <main>
+        <div data-ng-view></div>
+    </main>
+
+
+    <footer class="fixed-bottom">
+        <div data-ng-include="'footer.html'"></div>
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,67 @@
+.bg-orange {
+    background-color: #FE6603;
+}
+
+.bg-blue {
+    background-color: #003444;
+    border-top: 2pt solid white;
+}
+
+.sfondoheader, .sfondoCategoriaPop, .sfondoCategoriaTavolo, .sfondoCategoriaVideogames {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sfondoheader {
+    background-image: url("../img/wallpaper1.jpg");
+    padding-top: 10rem;
+}
+
+.sfondoCategoriaPop {
+    background-image: url("../img/wallpaper2.jpg");
+}
+
+.sfondoCategoriaTavolo {
+    background-image: url("../img/wallpaper3.jpg");
+}
+
+.sfondoCategoriaVideogames {
+    background-image: url("../img/wallpaper4.jpg");
+}
+
+.btn-menu {
+    background-color: #003444;
+    border-bottom: 2pt solid white;
+    padding: 0.1rem;
+    color: white;
+}
+
+.displayPC {
+    display: none;
+}
+
+.ombratesto {
+    text-shadow: 1pt 1pt black;
+}
+
+#spazio {
+    height: 10rem;
+}
+
+.margiauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 577px){
+    .displayPC {
+      display: inline-block;
+    }
+
+    .displayTel {
+        display: none;
+    }
+  
+  }

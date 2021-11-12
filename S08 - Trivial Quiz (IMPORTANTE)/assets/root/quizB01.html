@@ -1,0 +1,115 @@
+<div class="maincontenitore">
+
+    <div class="spaziovuoto"></div>
+
+
+    <div class="container text-center text-white">
+
+        <h1>Hai selezionato il quiz "Internet"</h1>
+
+        <div>
+
+            <hr>
+
+            <h3>Domanda 1:</h3>
+            <h3>Chi ha inventato il World Wide Web?</h3>
+
+            <p>&nbsp;</p>
+
+            <div class="pulsanti">
+
+                <button id="A" onclick="selezioneD(this.value, this.id)" value="Tim Berners-Lee" type="button">Tim
+                    Berners-Lee</button>
+                <button id="B" onclick="selezioneD(this.value, this.id)" value="Ernst Kline" type="button">Ernst Kline</button>
+                <button id="C" onclick="selezioneD(this.value, this.id)" value="Marco Moscato" type="button">Marco Moscato</button>
+
+            </div>
+
+            <p id="rispostaSelezionata"></p>
+
+            <p>&nbsp;</p>
+
+            <p>La tua risposta è:</p>
+            <p id="RispostaUtente"></p>
+
+            <button type="button" onclick="confermaRisposta()" class="btn btn-primary">Conferma risposta</button>
+            <div class="spaziovuoto"></div>
+
+            <div class="mt-2" id="RispostaDefinitiva"></div>
+
+            <div id="domandaSuccessiva"></div>
+
+            <div class="spaziovuoto"></div>
+            <hr>
+
+        </div>
+    </div>
+
+    <div class="spaziovuoto"></div>
+    <div class="spaziovuoto"></div>
+
+</div>
+
+<script>
+
+    var RispostaUtente = document.getElementById('RispostaUtente');
+    var RispostaDefinitiva = document.getElementById('RispostaDefinitiva');
+    var rispostaEsatta = 'Tim Berners-Lee'
+    var rispostaData = localStorage.getItem('rispostaDataB01' + UtenteSalvato);
+
+    var valore = localStorage.getItem('valoreB01' + UtenteSalvato);
+
+    if (rispostaData != null) {
+        confermaRisposta();
+    }
+
+    function selezioneD(value, id) {
+
+        if (rispostaData == null) {
+
+            console.log(value)
+            RispostaUtente.innerHTML = value
+            localStorage.setItem('valoreB01' + UtenteSalvato, value);
+
+        }
+
+        else {
+            alert('Non puoi rispondere nuovamente alla stessa domanda')
+        }
+    }
+
+    function confermaRisposta() {
+
+        var valore = localStorage.getItem('valoreB01' + UtenteSalvato);
+
+        var RispostaData = localStorage.setItem('rispostaDataB01' + UtenteSalvato, 'ok');
+
+        if (valore != null) {
+
+            if (valore == rispostaEsatta) {
+                RispostaDefinitiva.innerHTML = '<h1 class="p-2 bg-success">Complimenti, hai indovinato! La risposta giusta era proprio ' + rispostaEsatta + '</h1>'
+                document.querySelector('.pulsanti').innerHTML = "";
+            }
+
+            else {
+                RispostaDefinitiva.innerHTML = '<h1 class="p-2 bg-danger"> Mi dispiace, la risposta corretta era ' + rispostaEsatta + '</h1>'
+                document.querySelector('.pulsanti').innerHTML = "";
+            }
+
+            var domandaSuccessiva = document.getElementById('domandaSuccessiva');
+
+            domandaSuccessiva.innerHTML = '<button type="button" onclick="domandaSuc()" class="btn btn-secondary">Domanda successiva</button>';
+
+        }
+
+        else {
+            alert('Seleziona una risposta!')
+        }
+    }
+
+    function domandaSuc() {
+        location.href = "#!quizB02"
+    }
+
+
+</script>

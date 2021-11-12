@@ -1,0 +1,23 @@
+<app-my-header></app-my-header>
+
+<div class="container shadow-lg mt-5 p-5">
+
+  <app-create-list (AddNameX)="AddNameX($event)">
+
+  </app-create-list>
+
+
+  <app-my-list [rubrica]="rubrica" (removeName)="removeName($event)" (modificaName)="modificaName($event)">
+  </app-my-list>
+
+
+  <div class="text-center">
+    <button type="button" (click)="salvaLista()" class="btn btn-success">Salva lista</button>
+  </div>
+
+
+</div>
+
+<div class="spazioVuoto"></div>
+
+<app-my-footer></app-my-footer>

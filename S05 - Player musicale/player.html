@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Multimediale</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type=text/css href="assets/CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <section>
+
+
+      <div class="container-fluid d-flex align-items-center shadow">
+
+        <div
+          class="d-flex fixed-top container-fluid bg-dark mb-5 text-white text-center p-3 shadow justify-content-between align-items-center">
+
+          <div>
+            <a href="index.html"><img src="assets/img/logo-4.png" style="width: 100px" alt=""></a>
+          </div>
+
+          <div>
+            <h1>Il mio player multimediale</h1>
+            <p>Seleziona un elemento multimediale dalla lista dinamica</p>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+    </section>
+
+  </header>
+
+  <main>
+    <div class="container-fluid d-flex-col d-md-flex boxTop">
+
+      <div class="d-md-flex container border elencoAV">
+
+        <div class="col">
+          <h2>Audio</h2>
+          <p>Seleziona un brano in elenco per ascoltare musica</p>
+
+          <ul id="audioEl"></ul>
+
+        </div>
+
+        <div id="AudioPlay" class="d-flex justify-content-center align-items-center p-3 col">
+          <audio controls="" id="audioPlayer" src=""></audio>
+        </div>
+        
+
+      </div>
+
+
+      <div class="d-md-flex container border elencoAV ml-md-4">
+
+        <div class="col">
+          <h2>Video</h2>
+          <p>Seleziona un video in elenco per riprodurlo</p>
+          <ul id="videoEl"></ul>
+        </div>
+
+        <div id="VideoPlay" class="d-flex justify-content-center align-items-center p-3 col">
+          <video id="videoplayer" controls></video>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100&display=swap');
+
+body {        
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 22pt;
+}
+
+.fixed-header {
+  text-align: center;
+  position: fixed;        
+  background: black;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+} 
+
+.myButton {
+	background-color:orangered;
+  border-radius:5px;
+	cursor:pointer;
+	padding:15px 76px;
+	text-decoration:bold;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.myButton:hover {
+	background-color:#bc3315;
+}
+
+
+.content {
+  background-image: url("../img/banner.jpg");
+  background-size: 150vw;
+  text-align: center;
+  left: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 100;
+}
+
+.content2 {
+  text-align: center;
+}
+
+#imgrounded {
+  border-radius: 50%;
+}
+
+#txtblue {
+  padding: 0.5em;
+  color: #23A2BF;
+}
+
+.boxOrange {
+  font-size: 10pt;
+  background-color: #EF4C30;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  left: 0;
+  color: white;
+  text-align: center;
+}
+
+.boxBlue {
+  font-size: 10pt;
+  background-color: #25A1C2;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: white;
+  text-align: center;
+}
+
+.imgboxgrey {
+  margin: 5vw;
+  border:rgb(247, 247, 247);
+  border-radius: 0pt 0pt 5pt 5pt;
+  border-style: groove;
+}
+
+.imgbox {
+  max-width:100%;
+  border-collapse: collapse;
+}
+
+hr {
+  color: white;
+}
+
+a:link {
+  color: rgba(255, 255, 255, 0.753);
+  text-decoration: none;
+}

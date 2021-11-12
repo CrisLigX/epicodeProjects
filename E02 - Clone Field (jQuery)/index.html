@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type=text/css href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <title>Primo esercizio jQuery</title>
+</head>
+
+<body>
+
+    <!-- <header>
+
+        <nav style="height: 100px;" class="text-center navbar navbar-expand-lg navbar-dark bg-primary">
+            <img src="https://www.simulatorgiantruck.it/wp-content/uploads/2016/06/Shop-icon.png"
+                style="width: 50px; margin-right: 1rem;" alt="Logo Brand">
+            <a class="navbar-brand" href="#">EPICODE SHOP</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"
+                    aria-controls="myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto justify-content-center">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CHI SIAMO
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">STORIA</a>
+                            <a class="dropdown-item" href="#">SEDI</a>
+                            <a class="dropdown-item" href="#">ATTIVITÀ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CATALOGO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERIA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVIZI</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CONTATTI
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">NAPOLI</a>
+                            <a class="dropdown-item" href="#">MILANO</a>
+                            <a class="dropdown-item" href="#">ROMA</a>
+                            <a class="dropdown-item" href="#">FIRENZE</a>
+                            <a class="dropdown-item" href="#">BARI</a>
+                            <a class="dropdown-item" href="#">PALERMO</a>
+                            <a class="dropdown-item" href="#">CAGLIARI</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header> -->
+
+    <header>
+
+        <!-- Qui inizia la navbar -->
+
+        <nav class="navbar fixed-top navbar-expand-md bg-primary navbar-dark py-3">
+            <div class="container">
+                <img src="https://www.simulatorgiantruck.it/wp-content/uploads/2016/06/Shop-icon.png"
+                style="width: 50px; margin-right: 1rem;" alt="Logo Brand">
+            <a class="navbar-brand" href="index.html">EPICODE SHOP</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"
+                    aria-controls="myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="navbar-nav mr-auto justify-content-center">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CHI SIAMO
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">STORIA</a>
+                                <a class="dropdown-item" href="#">SEDI</a>
+                                <a class="dropdown-item" href="#">ATTIVITÀ</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATALOGO</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GALLERIA</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVIZI</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CONTATTI
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">NAPOLI</a>
+                                <a class="dropdown-item" href="#">MILANO</a>
+                                <a class="dropdown-item" href="#">ROMA</a>
+                                <a class="dropdown-item" href="#">FIRENZE</a>
+                                <a class="dropdown-item" href="#">BARI</a>
+                                <a class="dropdown-item" href="#">PALERMO</a>
+                                <a class="dropdown-item" href="#">CAGLIARI</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Qui finisce -->
+
+
+        <main style="margin-top: 6rem;">
+            <div id="apt" class="container p-2">
+
+                <fieldset id="fieldset_cliente" name="fieldset_cliente">
+                    <h4>Form jQuery</h4>
+                    <label>Cliente</label>
+                    <br>
+                    <input id="cliente" name="cliente" type="text">
+                </fieldset>
+
+                <fieldset id="fieldset1" name="fieldset1">
+                    <label>Articolo</label>
+                    <br>
+                    <input id="articolo" name="articolo" type="text">
+                    <br>
+                    <label>Quantità</label>
+                    <br>
+                    <input id="quantita" name="quantita" type="text">
+                    <br>
+                    <label>Prezzo</label>
+                    <br>
+                    <input id="prezzo" name="prezzo" type="text">
+                </fieldset>
+            </div>
+
+            <div class="container p-2">
+                <fieldset>
+                    <br>
+                    <input id="campoqta" readonly="number">
+                    <button id="aggiungi" name="aggiungi" type="button">Aggiungi</button>
+                    <button type="button">Invia</button>
+                </fieldset>
+            </div>
+
+
+        </main>
+
+</body>
+
+</html>

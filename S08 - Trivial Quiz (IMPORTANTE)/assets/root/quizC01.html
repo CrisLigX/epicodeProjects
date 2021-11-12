@@ -1,0 +1,114 @@
+<div class="maincontenitore">
+
+    <div class="spaziovuoto"></div>
+
+
+    <div class="container text-center text-white">
+
+        <h1>Hai selezionato il quiz "Programmazione"</h1>
+
+        <div>
+
+            <hr>
+
+            <h3>Domanda 1:</h3>
+            <h3>Quando è stata rilasciata la prima versione di Angular?</h3>
+
+            <p>&nbsp;</p>
+
+            <div class="pulsanti">
+
+                <button id="A" onclick="selezioneD(this.value, this.id)" value="2012" type="button">2012</button>
+                <button id="B" onclick="selezioneD(this.value, this.id)" value="2007" type="button">2007</button>
+                <button id="C" onclick="selezioneD(this.value, this.id)" value="2016" type="button">2016</button>
+
+            </div>
+
+            <p id="rispostaSelezionata"></p>
+
+            <p>&nbsp;</p>
+
+            <p>La tua risposta è:</p>
+            <p id="RispostaUtente"></p>
+
+            <button type="button" onclick="confermaRisposta()" class="btn btn-primary">Conferma risposta</button>
+            <div class="spaziovuoto"></div>
+
+            <div class="mt-2" id="RispostaDefinitiva"></div>
+
+            <div id="domandaSuccessiva"></div>
+
+            <div class="spaziovuoto"></div>
+            <hr>
+
+        </div>
+    </div>
+
+    <div class="spaziovuoto"></div>
+    <div class="spaziovuoto"></div>
+
+</div>
+
+<script>
+
+    var RispostaUtente = document.getElementById('RispostaUtente');
+    var RispostaDefinitiva = document.getElementById('RispostaDefinitiva');
+    var rispostaEsatta = '2016'
+    var rispostaData = localStorage.getItem('rispostaDataC01' + UtenteSalvato);
+
+    var valore = localStorage.getItem('valoreC01' + UtenteSalvato);
+
+    if (rispostaData != null) {
+        confermaRisposta();
+    }
+
+    function selezioneD(value, id) {
+
+        if (rispostaData == null) {
+
+            console.log(value)
+            RispostaUtente.innerHTML = value
+            localStorage.setItem('valoreC01' + UtenteSalvato, value);
+
+        }
+
+        else {
+            alert('Non puoi rispondere nuovamente alla stessa domanda')
+        }
+    }
+
+    function confermaRisposta() {
+
+        var valore = localStorage.getItem('valoreC01' + UtenteSalvato);
+
+        var RispostaData = localStorage.setItem('rispostaDataC01' + UtenteSalvato, 'ok');
+
+        if (valore != null) {
+
+            if (valore == rispostaEsatta) {
+                RispostaDefinitiva.innerHTML = '<h1 class="p-2 bg-success">Complimenti, hai indovinato! La risposta giusta era proprio ' + rispostaEsatta + '</h1>'
+                document.querySelector('.pulsanti').innerHTML = "";
+            }
+
+            else {
+                RispostaDefinitiva.innerHTML = '<h1 class="p-2 bg-danger"> Mi dispiace, la risposta corretta era ' + rispostaEsatta + '</h1>'
+                document.querySelector('.pulsanti').innerHTML = "";
+            }
+
+            var domandaSuccessiva = document.getElementById('domandaSuccessiva');
+
+            domandaSuccessiva.innerHTML = '<button type="button" onclick="domandaSuc()" class="btn btn-secondary">Domanda successiva</button>';
+
+        }
+
+        else {
+            alert('Seleziona una risposta!')
+        }
+    }
+
+    function domandaSuc() {
+        location.href = "#!quizC02"
+    }
+
+
+</script>

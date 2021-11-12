@@ -1,0 +1,42 @@
+{
+    "quizA": [
+        {
+            "domanda": "Quando è stato inventato il PC?",
+            "A": "1950",
+            "B": "1951",
+            "C": "1952",
+            "rispostaGiusta": "1952",
+            "identificativo": "D1"
+        },
+
+        {
+            "domanda": "Come si chiama il fondatore di Microsoft?",
+            "A": "Jeff Bezos",
+            "B": "Bill Gates",
+            "C": "Steve Jobs",
+            "rispostaGiusta": "Bill Gates",
+            "identificativo": "D1"
+        }
+    
+    ],
+
+    "quizB": [
+        {
+            "nome": "PlayStation | The Last of US 2",
+            "categoria": "Videogames",
+            "identificativo": "vdg1",
+            "prezzo": 59.90,
+            "immagine": "../Settimana07/assets/img/vdg_01.png"
+        }
+    ],
+
+    "quizC": [
+        {
+            "nome": "Pandemic",
+            "categoria": "Giochi da tavolo",
+            "identificativo": "gdt1",
+            "prezzo": 45.90,
+            "immagine": "../Settimana07/assets/img/gdt_01.png"
+        }
+    ]
+}

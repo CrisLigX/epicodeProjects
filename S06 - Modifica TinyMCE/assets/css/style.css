@@ -1,0 +1,30 @@
+.divBord {
+    background-color: rgb(243, 243, 243);
+    border: 1pt solid rgb(196, 196, 196);
+    padding: 1rem;
+}
+
+.divBord2 {
+    background-color: white;
+    border: 1pt solid rgb(196, 196, 196);
+    padding: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+
+.pHidden {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#ElemSaveLista {
+    padding: 2rem;
+}
+
+

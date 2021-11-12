@@ -1,0 +1,30 @@
+<ul class="list-group list-group-flush my-4">
+  <li *ngFor="let item of rubrica" class="list-group-item">
+
+    <span>{{item.nome}} {{item.cognome}} ({{item.citta}})</span>
+
+    <button type="button" (click)="deleteTodo(item)" class="btn btn-danger btn-sm float-end">X</button>
+    <button type="button" (click)="selectTodo(item)" class="btn btn-warning btn-sm float-end me-3">Seleziona</button>
+
+
+  </li>
+
+  <div class="text-center MostraNascondi">
+    
+    <div class="mt-3" *ngIf="ModuloModifica">
+
+      <h3>Elemento selezionato</h3>
+
+      <p>&nbsp;</p>
+
+      <input [(ngModel)]="nomeModificato.nome" type="text" name="nomeM" id="">
+      <input [(ngModel)]="nomeModificato.cognome" type="text" name="cognomeM" id="">
+      <input [(ngModel)]="nomeModificato.citta" type="text" name="cittaM" id="">
+
+      <button type="button" (click)="modificaTodo()" class="btn btn-primary btn-sm float-end me-3">Salva elemento modificato</button>
+
+    </div>
+
+  </div>
+
+</ul>

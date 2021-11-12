@@ -1,0 +1,12 @@
+<div class="container my-10">
+<div class="card shadow" style="width: 18rem;">
+    <img src="https://picsum.photos/500/300?random=1" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{selProd.name}}</h5>
+      <p class="card-text">{{selProd.descrizione}}</p>
+      <p class="card-text">{{selProd.prezzo | currency:'EUR' }}</p>
+      <p class="card-text">Quantità disponibili {{selProd.qta | number }}</p>
+      <button type="button" class="btn btn-primary" (click)="aggiungiCarrello()">Aggiungi al carrello</button>
+    </div>
+  </div>
+</div>

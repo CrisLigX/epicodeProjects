@@ -1,0 +1,49 @@
+[
+    {
+        "nome": "POP (Game of Thrones) Jon Snow",
+        "categoria": "Funko Pop",
+        "identificativo": "pop1",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_01.png"
+    },
+
+    {
+        "nome": "POP (The Walking Dead) Rick Grimes",
+        "categoria": "Funko Pop",
+        "identificativo": "pop2",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_02.png"
+    },
+
+    {
+        "nome": "POP (IT) Pennywise",
+        "categoria": "Funko Pop",
+        "identificativo": "pop3",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_03.png"
+    },
+
+    {
+        "nome": "POP (How i met your Mother) Barney Stinson",
+        "categoria": "Funko Pop",
+        "identificativo": "pop4",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_04.png"
+    },
+
+    {
+        "nome": "POP (No Time To Die) James Bond",
+        "categoria": "Funko Pop",
+        "identificativo": "pop5",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_05.png"
+    },
+
+    {
+        "nome": "POP (NFL) Tom Brady (New England Patriots)",
+        "categoria": "Funko Pop",
+        "identificativo": "pop6",
+        "prezzo": 19.90,
+        "immagine": "../Settimana07/assets/img/pop_06.png"
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "nome": "Pandemic",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt1",
+        "prezzo": 45.90,
+        "immagine": "../Settimana07/assets/img/gdt_01.png"
+    },
+
+    {
+        "nome": "Cluedo",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt2",
+        "prezzo": 35.90,
+        "immagine": "../Settimana07/assets/img/gdt_02.png"
+    },
+
+    {
+        "nome": "Trivial Pursuit",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt3",
+        "prezzo": 50,
+        "immagine": "../Settimana07/assets/img/gdt_03.png"
+    },
+
+    {
+        "nome": "Colt Express",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt4",
+        "prezzo": 36.90,
+        "immagine": "../Settimana07/assets/img/gdt_04.png"
+    },
+
+    {
+        "nome": "Potion Explosion",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt5",
+        "prezzo": 39.90,
+        "immagine": "../Settimana07/assets/img/gdt_05.png"
+    },
+
+    {
+        "nome": "Le Case della Follia",
+        "categoria": "Giochi da tavolo",
+        "identificativo": "gdt6",
+        "prezzo": 89.90,
+        "immagine": "../Settimana07/assets/img/gdt_06.png"
+    }
+]
